@@ -4,10 +4,17 @@
 
 Projektet har som syfte att skapa en version av det klassiska spelet __sten-sax-påse__ i Python 🐍.
 
-### Krav:
+### Grundkrav:
 
 * [ ] Datorn slumpar vilken av sten, sax eller påse den ska välja.
 * [ ] Spelaren väljer också sten, sax eller påse.
 * [ ] Datorn och spelaren visar sedan upp sina val samtidigt.
 * [ ] Reglerna är enligt följande: sten vinner över sax, sax vinner över påse, och påse vinner över sten. Om båda väljer samma alternativ blir det oavgjort.
 * [ ] Spelaren spelar tills hen vinner eller förlorar mot datorn.
+
+
+
+### Tillägg:
+
+* [ ] Programmet välkomnar spelaren och ber om namn och önskat antal spelomgångar.
+* [ ] Check att spelaren anger ett giltigt antal omgångar (mellan 0-10).
