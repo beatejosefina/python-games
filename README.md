@@ -22,8 +22,8 @@ Projektet har som syfte att skapa en version av det klassiska spelet __sten-sax-
 * [X] Check att spelaren anger ett giltigt antal omgångar (mellan 1-10).
 
   * [X] Check att spelaren anger ett svar av korrekt datatyp (int)
-* [X] Check att spelaren anger korrekt spel-val (sten, sax eller påse)
-* [X] Mappning av användar svar (str) till motsvarande emoji
+* [X] Check att spelaren anger korrekt spelval (sten, sax eller påse)
+* [X] Mappning av användarinput (str) till motsvarande emoji
 
   ```
   Sten --> 🪨 
