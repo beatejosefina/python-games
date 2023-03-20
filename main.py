@@ -19,7 +19,7 @@ while user_rounds <= 0 or user_rounds > 10:
         else:
             print (f"WOW, {user_name}, {user_rounds}?? That's a bit too much for me, sorry! Maybe we can settle for somwhere between 0-10 instead?")
     except ValueError:
-        # Hantterar exception, sätter user_rounds = 0 för att fortsätta uppfylla while-villkoret 
+        # Hanterar exception, sätter user_rounds = 0 för att fortsätta uppfylla while-villkoret 
         user_rounds = 0
         print('Please enter a number')
 
