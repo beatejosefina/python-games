@@ -16,14 +16,12 @@ Projektet har som syfte att skapa en version av det klassiska spelet __sten-sax-
 * [X] Reglerna är enligt följande: sten vinner över sax, sax vinner över påse, och påse vinner över sten. Om båda väljer samma alternativ blir det oavgjort.
 * [X] Spelaren spelar tills hen vinner eller förlorar mot datorn.
 
-
-
 #### Tillägg:
 
 * [X] Programmet välkomnar spelaren och ber om namn och önskat antal spelomgångar.
 * [X] Check att spelaren anger ett giltigt antal omgångar (mellan 1-10).
 
-  * [ ] Check att spelaren anger ett svar av korrekt datatyp (int)
+  * [X] Check att spelaren anger ett svar av korrekt datatyp (int)
 * [X] Check att spelaren anger korrekt spel-val (sten, sax eller påse)
 * [X] Mappning av användar svar (str) till motsvarande emoji
 

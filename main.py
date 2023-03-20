@@ -9,13 +9,21 @@ print(f"Nice to meet you, {user_name}!")
 user_rounds = 0
 while user_rounds <= 0 or user_rounds > 10:
     
-    user_rounds = int(input('How many rounds are you up for? '))
-    if user_rounds <= 0:
-        print("Hmm that's no fun, please give me a number between 0-10")
-    elif user_rounds <= 10:
-        print(f"Ok, {user_name}, that's fine by me! Let's play {user_rounds} rounds.")
-    else:
-        print (f"WOW, {user_name}, {user_rounds}?? That's a bit too much for me, sorry! Maybe we can settle for somwhere between 0-10 instead?")
+    user_rounds = input('How many rounds are you up for? ')
+    try:
+        # Verifierar att användaren matat in en int
+        user_rounds = int(user_rounds)
+        if user_rounds <= 0:
+            print("Hmm that's no fun, please give me a number between 0-10")
+        elif user_rounds <= 10:
+            print(f"Ok, {user_name}, that's fine by me! Let's play {user_rounds} rounds.")
+        else:
+            print (f"WOW, {user_name}, {user_rounds}?? That's a bit too much for me, sorry! Maybe we can settle for somwhere between 0-10 instead?")
+       
+    except ValueError:
+        # Hantterar exception, sätter user_rounds = 0 för att fortsätta uppfylla while-villkoret 
+        user_rounds = 0
+        print('Please enter a number')
 
 # Poäng-score, räknas upp inuti for-loopen 
 computer_score = 0
