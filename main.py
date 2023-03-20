@@ -8,7 +8,6 @@ print(f"Nice to meet you, {user_name}!")
 # while-loop, forsätter tills seplaren anger ett giltigt antal rundor (1-10)
 user_rounds = 0
 while user_rounds <= 0 or user_rounds > 10:
-    
     user_rounds = input('How many rounds are you up for? ')
     try:
         # Verifierar att användaren matat in en int
@@ -19,7 +18,6 @@ while user_rounds <= 0 or user_rounds > 10:
             print(f"Ok, {user_name}, that's fine by me! Let's play {user_rounds} rounds.")
         else:
             print (f"WOW, {user_name}, {user_rounds}?? That's a bit too much for me, sorry! Maybe we can settle for somwhere between 0-10 instead?")
-       
     except ValueError:
         # Hantterar exception, sätter user_rounds = 0 för att fortsätta uppfylla while-villkoret 
         user_rounds = 0
@@ -35,7 +33,6 @@ for round in range(1, user_rounds + 1):
     # [X] Datorn slumpar vilken av sten, sax eller påse den ska välja.
     mylist = ["📄", "🪨", "✂️"] 
     computer_choice = r.choice(mylist)
-
 
     # [X] Spelaren väljer också sten, sax eller påse.
     # While-loop forttgår tills användaren anger korrekt input 
@@ -65,6 +62,7 @@ for round in range(1, user_rounds + 1):
     else:
         user_score += 1
         print(f'{user_name} win!')
+        
     print(f'Computer: {computer_score} - {user_name}: {user_score}')
     
     # Upräkning av for-vilkoret, används även för att dynamisk meddela användaren om vilket omgång som pågår och hur många omgångar det är kvar.
@@ -84,6 +82,7 @@ elif computer_score < user_score:
     print(f'{user_name} is the champion! 🏆')
 else:
     print("Wow, tie. I guees everyone's a winner then 🏆")
+    
 print(f'\n-------- 🐍 Thanks for playing, see you soon, {user_name} 🐍 -------- \n')
 
 
