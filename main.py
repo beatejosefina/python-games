@@ -58,10 +58,10 @@ for round in range(1, user_rounds + 1):
         print("Tie!")
     elif (computer_choice == "📄" and user_choice == "🪨") or (computer_choice == "🪨" and user_choice == "✂️") or (computer_choice == "✂️" and user_choice == "📄"):
         computer_score += 1
-        print('Computer win!')
+        print('Computer wins!')
     else:
         user_score += 1
-        print(f'{user_name} win!')
+        print(f'{user_name} wins!')
         
     print(f'Computer: {computer_score} - {user_name}: {user_score}')
     
